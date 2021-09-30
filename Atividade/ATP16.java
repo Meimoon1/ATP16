@@ -6,9 +6,12 @@ public class ATP16 {
 
        Scanner sc = new Scanner(System.in);
         CalculadoraTaxas c = new CalculadoraTaxas();
-        double t = c.taxaTransferencia(1200.76);
+        System.out.println("Será acrescentado uma taxa de 0.001% por transação");
+        System.out.println("Informe o valor da transferência: ");
+        double transferencia = Double.parseDouble(sc.nextLine());
+        double t = c.taxaTransferencia(transferencia);
 
-        System.out.printf("A taxa de transferência é: %.2f \n",t);
+        System.out.printf("O valor total de transferência é: %.2f \n",t);
 
         System.out.println("A cada cinco sanques, será cobrado um valor de R$ 1,30");
         System.out.print("Informe a quantidade de sanques: ");
