@@ -1,12 +1,22 @@
 package Atividade;
 
-public class CalculadoraTaxas {
-     double valorRetornado;
 
-    public double calcularTransferencia(double valorTransferido){
+public class CalculadoraTaxas {
+    
+
+    public double taxaTransferencia(double valorTransferido){
         double valorRetornado = valorTransferido + valorTransferido* 0.001;
         return valorRetornado;
     }
 
-    //public void calcularSaques(double )
+    public double taxaSaque(int saques, double valorTransferido){
+       if(saques >= 5){
+            valorTransferido = valorTransferido + 1.30;
+       }else{
+           return valorTransferido;
+       }
+       return valorTransferido;
+    }
+
+    
 }
