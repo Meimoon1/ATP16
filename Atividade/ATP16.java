@@ -6,22 +6,45 @@ public class ATP16 {
 
        Scanner sc = new Scanner(System.in);
         CalculadoraTaxas c = new CalculadoraTaxas();
-        
-        System.out.println("Informe o valor da transferência: ");
+        System.out.println("-----------Transferência-----------");
+        System.out.print("Informe o valor da transferência: \n");
         double transferencia = Double.parseDouble(sc.nextLine());
         double t = c.taxaTransferencia(transferencia);
 
         System.out.printf("A taxa da transferência foi: R$ %.2f \n",t);
 
-       /* System.out.println("*----------A cada cinco sanques, será cobrado um valor de R$ 1,30------------*");
-        System.out.print("Informe a quantidade de sanques: ");
-        int qtdsaques = Integer.parseInt(sc.nextLine());
-        System.out.print("Informe o valor transferido: ");
-        double valorT = Double.parseDouble(sc.nextLine());
-
-       double t2= c.taxaSaque(qtdsaques, valorT); */
+        int opcao = 0;
+        while(opcao != 2){
+            Scanner src = new Scanner(System.in);
+            
+            System.out.println("------------- Saques--------------");
+            System.out.println(" 1-Sacar \n 2-Sair");
+            opcao = Integer.parseInt(src.next());
         
-       // System.out.printf("O valor transferido total é: %.2f ", t2);
+            switch(opcao){
+                
+                case 1:
+                        double t2 = c.taxaSaque();
+                        System.out.println("A taxa de saque é: "+t2 );
+
+                break;
+                case 2: 
+                    System.out.println("----Saindo----");
+                break;
+                default:
+                    System.out.println("Opção inválida");
+                break;
+            }  
+        }
+       
+    
+        
+
+       
+
+       
+        
+ 
 
         
 
