@@ -24,9 +24,11 @@ public class ATP16 {
             switch(opcao){
                 
                 case 1:
-                        double t2 = c.taxaSaque();
-                        System.out.println("A taxa de saque é: "+t2 );
-
+                    double t2 = c.taxaSaque();
+                    System.out.println("Informe o valor do saque:");
+                    double valorSaque = Double.parseDouble(sc.nextLine());
+                    System.out.println("A taxa de saque é: "+t2 );
+                    System.out.println("O valor do saque é: " + valorSaque);
                 break;
                 case 2: 
                     System.out.println("----Saindo----");
