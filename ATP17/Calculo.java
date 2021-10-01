@@ -15,5 +15,8 @@ public class Calculo {
         return imposto;    
     }
 
-   
+    public double calcularIr(double valorRecebido){
+        double imposto = valorRecebido * taxaIr;
+        return imposto;
+    }
 }
