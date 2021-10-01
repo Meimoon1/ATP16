@@ -6,6 +6,10 @@ public class Principal {
 
        double r = c.calcularIss(1500);
        System.out.println(r);
+       double r1 = c.calcularIof(4000);
+       System.out.println(r1);
+       double r2 = c.calcularIr(2000);
+       System.out.println(r2);
         
 
     }
