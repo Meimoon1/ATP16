@@ -2,8 +2,8 @@ package Atividade;
 
 public class CalculadoraTaxas {
     private int contSaque = 0;
-    private double taxa = 0;
-    private double taxaTransferencia = 0.001;
+    
+    private double taxaTransferencia = 0.00001;
     private double taxaSaque = 1.30;
 
     public double taxaTransferencia(double valorTransferido){
@@ -15,8 +15,7 @@ public class CalculadoraTaxas {
         contSaque +=1;
         
         if(contSaque%5 ==0){
-            taxa = taxa + taxaSaque;
-            return taxa;
+            return taxaSaque;
         }else{
             return 0;
         }
