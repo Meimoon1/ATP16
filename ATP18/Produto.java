@@ -13,7 +13,6 @@ public class Produto {
         return this.codigo;
     }
 
-
     public void setNome(String nome){
         this.nome = nome;
     }   
@@ -28,6 +27,11 @@ public class Produto {
         return this.descricao;
     }
 
-
+    public void setValor(double valor){
+        this.valor = valor;
+    }
+    public double getValor(){
+        return this.valor;
+    }
 
 }
