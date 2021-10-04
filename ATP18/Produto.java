@@ -6,4 +6,13 @@ public class Produto {
     private String descricao;
     private double valor;
 
+    public void setCodigo(int codigo){
+        this.codigo = codigo;
+    }
+
+    public int getCodigo(){
+        return this.codigo;
+    }
+
+    
 }
