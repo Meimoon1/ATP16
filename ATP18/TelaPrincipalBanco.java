@@ -9,16 +9,16 @@ public class TelaPrincipalBanco{
         conta.setSaldo(1500.00);
 
         int a = conta.getAgencia();
-        System.out.println(a);
+        System.out.println("Agência: "+a);
 
         int n = conta.getNumero();
-        System.out.println(n);
+        System.out.println("Conta: "+n);
 
         int c = conta.getCodigo();
-        System.out.println(c);
+        System.out.println("Código: "+c);
 
         double s = conta.getSaldo();
-        System.out.println(s);
+        System.out.println("Saldo: "+s);
     }
 
 }
