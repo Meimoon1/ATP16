@@ -42,6 +42,17 @@ public class CadastroPessoas {
         p1.setRg("09998393999209");
         p1.setCpf("009039309303039");
 
+        p[0] = p1;
+        p[1] = p2;
+        p[2] = p3;
+        p[3] = p4;
+        p[4] = p5;
+        
+        for(PessoaFisica pf : p){
+           System.out.printf("Código: %d \n Nome: %s \n Sobrenome: %s \n Idade: %d \n RG: %s \n CPF: %s",pf.getCodigo(), pf.getNome(),pf.getSobrenome(), pf.getIdade(),pf.getRg(),pf.getCpf());
+        }
+
     }
+
     
 }
