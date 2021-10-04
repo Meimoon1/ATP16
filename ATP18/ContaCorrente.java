@@ -25,6 +25,14 @@ public class ContaCorrente {
         return this.codigo;
     }
 
+    public void setSaldo(double saldo){
+        this.saldo = saldo;
+    }
+    public int getSaldo(){
+        return this.saldo;
+    }
+
+
     
 
 
