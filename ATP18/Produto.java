@@ -21,5 +21,13 @@ public class Produto {
         return this.nome;
     }
 
+    public void setdescricao(String descricao){
+        this.descricao = descricao;
+    }
+    public String getDescicao(){
+        return this.descricao;
+    }
+
+
 
 }
