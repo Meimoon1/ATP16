@@ -34,4 +34,18 @@ public class PessoaFisica {
         return this.idade;
     }
 
+    public void setRg(String rg){
+        this.rg = rg;
+    }
+    public String getRg(){
+        return this.rg;
+    }
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+    public String getCpf(){
+        return this.cpf;
+    }
+
 }
