@@ -1,7 +1,9 @@
 public class CadastroPessoas {
     public static void main(String[] args) {
+        //criacao do array com cinco posições
         PessoaFisica[] p = new PessoaFisica[5];
 
+        //criacao dos cinco objetos da classe pessoa fisica
         PessoaFisica p1 = new PessoaFisica();
         p1.setCodigo(123);
         p1.setNome("Melissa");
@@ -42,12 +44,14 @@ public class CadastroPessoas {
         p5.setRg("09998393999209");
         p5.setCpf("009039309303039");
 
+        //preenchendo o array criado com informações de cada objeto
         p[0] = p1;
         p[1] = p2;
         p[2] = p3;
         p[3] = p4;
         p[4] = p5;
         
+        //impressao usando foreach
         for(PessoaFisica pf : p){
             System.out.println("-------------------------------------------------");
            System.out.printf("\n Código: %d \n Nome: %s \n Sobrenome: %s \n Idade: %d \n RG: %s \n CPF: %s \n ",pf.getCodigo(), pf.getNome(),pf.getSobrenome(), pf.getIdade(),pf.getRg(),pf.getCpf());
