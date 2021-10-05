@@ -27,20 +27,20 @@ public class CadastroPessoas {
         p3.setCpf("009039309303039");
 
         PessoaFisica p4 = new PessoaFisica();
-        p1.setCodigo(126);
-        p1.setNome("Deanerys");
-        p1.setSobrenome("Targeryan");
-        p1.setIdade(22);
-        p1.setRg("09998393999209");
-        p1.setCpf("009039309303039");
+        p4.setCodigo(126);
+        p4.setNome("Deanerys");
+        p4.setSobrenome("Targeryan");
+        p4.setIdade(22);
+        p4.setRg("09998393999209");
+        p4.setCpf("009039309303039");
 
         PessoaFisica p5 = new PessoaFisica();
-        p1.setCodigo(123);
-        p1.setNome("Bilbo");
-        p1.setSobrenome("Bolseiro");
-        p1.setIdade(160);
-        p1.setRg("09998393999209");
-        p1.setCpf("009039309303039");
+        p5.setCodigo(123);
+        p5.setNome("Bilbo");
+        p5.setSobrenome("Bolseiro");
+        p5.setIdade(160);
+        p5.setRg("09998393999209");
+        p5.setCpf("009039309303039");
 
         p[0] = p1;
         p[1] = p2;
@@ -49,7 +49,8 @@ public class CadastroPessoas {
         p[4] = p5;
         
         for(PessoaFisica pf : p){
-           System.out.printf("Código: %d \n Nome: %s \n Sobrenome: %s \n Idade: %d \n RG: %s \n CPF: %s",pf.getCodigo(), pf.getNome(),pf.getSobrenome(), pf.getIdade(),pf.getRg(),pf.getCpf());
+            System.out.println("-------------------------------------------------");
+           System.out.printf("\n Código: %d \n Nome: %s \n Sobrenome: %s \n Idade: %d \n RG: %s \n CPF: %s \n ",pf.getCodigo(), pf.getNome(),pf.getSobrenome(), pf.getIdade(),pf.getRg(),pf.getCpf());
         }
 
     }
