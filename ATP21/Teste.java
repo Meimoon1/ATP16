@@ -11,7 +11,7 @@ public class Teste {
         cc.setSaldo(6000);
         cc.setCodigo(1190);
         
-        double r2 = cc.transferencia(120.00);
+        //double r2 = cc.transferencia(120.00);
 
         System.out.printf(" Código Cliente: %d \n Saldo: %.2f \n Saldo Após transferência: %.2f\n", c.getCodigo(), c.getSaldo(), r);
         System.out.println("------------------------------");
