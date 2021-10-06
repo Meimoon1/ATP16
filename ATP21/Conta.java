@@ -1,7 +1,7 @@
 public class Conta{
     private double saldo;
     private int codigo_cliente;
-
+ 
     public void setSaldo(double saldo){
         this.saldo = saldo;
     }
@@ -15,4 +15,11 @@ public class Conta{
     public int getCodigo(){
         return codigo_cliente;
     }
+
+    public double transferencia(double valor){
+        double saldoFinal = this.getSaldo() - valor;
+        return saldoFinal;
+    }
+
+    
 }
