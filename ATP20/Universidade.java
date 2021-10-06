@@ -24,7 +24,13 @@ public class Universidade {
         a.setMatricula("88700929");
         a.setCurso("Física");
         a.setTurma("B");
-        
 
+        //Impressão dos objetos
+        System.out.println("*-----------Funcionários---------------*");
+        System.out.printf(" Nome: %s \n Sobrenome: %s \n Matrícula: %s \n Salário: %f \n Departamento: %s \n", f.getNome(), f.getSobrenome(), f.getMatricula(),f.getSalario(), f.getDepartamento());
+        System.out.println("\n*----------Coordenadores--------------*");
+        System.out.printf(" Nome: %s \n Sobrenome: %s \n Matrícula: %s \n Curso Coordenado: %s \n Bonus: %f \n", c.getNome(), c.getSobrenome(), c.getMatricula(), c.getCurso_coordenado(), c.getBonus());
+        System.out.println("*----------------Alunos-----------------*");
+        System.out.printf(" Nome: %s \n Sobrenome: %s \n Matricula: %s \n Curso: %s \n Turma: %s \n", a.getNome(), a.getSobrenome(), a.getMatricula(),a.getCurso(), a.getTurma());
     }
 }
