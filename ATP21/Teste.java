@@ -4,12 +4,12 @@ public class Teste {
         ContaCorrente cc = new ContaCorrente();
 
         c.setSaldo(1500);
-        //c.getSaldo();
+        //double saldo =c.getSaldo();
         c.setCodigo(1180);
-        //c.getCodigo();
+        //double codigo = c.getCodigo();
         double r = c.transferencia(340.00);
 
-        System.out.printf("Código Cliente: %d \n Saldo: %f \n Saldo Após transferência: \n", c.getSaldo(), c.getCodigo(), r);
+        System.out.printf(" Código Cliente: %d \n Saldo: %.2f \n Saldo Após transferência: %.2f\n", c.getCodigo(), c.getSaldo(), r);
         
     }
 }
