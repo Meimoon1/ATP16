@@ -23,4 +23,10 @@ public class Aluno{
     public String getMatricula(){
         return matricula;
     }
+
+    @Override
+    public String toString(){
+        String mensagem = "Nome: "+ this.nomeCompleto + "Idade: " + this.idade + "Matricula:" + this.matricula;
+        return mensagem;
+    }
 }    
