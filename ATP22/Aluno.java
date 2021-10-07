@@ -9,4 +9,18 @@ public class Aluno{
     public String getNomeCompleto(){
         return nomeCompleto;
     }
-}
+
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+    public int getIdade(){
+        return idade;
+    }
+
+    public void setMatricula(String matricula){
+        this.matricula = matricula;
+    }
+    public String getMatricula(){
+        return matricula;
+    }
+}    
