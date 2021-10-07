@@ -19,7 +19,7 @@ public class ContaCorrente {
     }
 
     public String toString(){
-        String mensagem = "Saldo: R$ "+ saldo + " \nTaxa Saque: R$ " + taxaSaque + " \nCódigo do cliente: "+ codigoCliente;
+        String mensagem = " \nSaldo: R$ "+ saldo + " \nTaxa Saque: R$ " + taxaSaque + " \nCódigo do cliente: "+ codigoCliente;
         return mensagem;
     }
     
