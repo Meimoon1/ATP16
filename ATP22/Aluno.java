@@ -26,7 +26,7 @@ public class Aluno{
 
     @Override
     public String toString(){
-        String mensagem = "Nome: "+ this.nomeCompleto + "Idade: " + this.idade + "Matricula:" + this.matricula;
+        String mensagem = "Nome: "+ this.nomeCompleto + " \nIdade: " + this.idade + " \nMatricula: " + this.matricula;
         return mensagem;
     }
 }    
